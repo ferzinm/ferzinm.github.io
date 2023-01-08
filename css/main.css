@@ -162,6 +162,7 @@ header h1 {
     margin-top: 0;
     margin-bottom: 40px;
     font-weight: bold;
+	text-shadow: 2px 2px 3px #5e5e5e;
 }
 
 header .after-h1 {
