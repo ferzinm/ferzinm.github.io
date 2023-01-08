@@ -162,7 +162,8 @@ header h1 {
     margin-top: 0;
     margin-bottom: 40px;
     font-weight: bold;
-	font-style: cursive;
+	
+    font-family: cursive;
 	text-shadow: 2px 2px 3px #5e5e5e;
 }
 
