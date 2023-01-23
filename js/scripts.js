@@ -65,7 +65,7 @@ formMsg.addEventListener("submit", (event) => {
   const encodeMsg = encodeURI(msg);
 
   const result = fetch(
-    `https://api.telegram.org/bot${TOKEN_BOT}/sendMessage?chat_id=1&parse_mode=html&text=${encodeMsg}`
+    `https://api.telegram.org/bot${TOKEN_BOT}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${encodeMsg}`
   );
   result
     .then((r) => {
