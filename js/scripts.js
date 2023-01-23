@@ -10,7 +10,7 @@ const contactButton = document.querySelector("#contact-btn");
 const bodyModalSucces = modalSucces._element.querySelector(".modal-body");
 
 const handleScrollContact = () => {
-  contacts.scrollIntoView({ block: "center", behavior: "smooth" });
+  contacts.scrollIntoView({ block: "end", behavior: "smooth" });
 };
 
 contactButton.addEventListener("click", handleScrollContact);
