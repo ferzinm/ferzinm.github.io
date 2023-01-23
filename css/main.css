@@ -33,7 +33,7 @@ h2 span {
     margin: 0 0 40px;
 }
 
-.btn {
+/* .btn {
     border-radius: 6px;
     font-size: 14px;
     padding: 15px 25px;
@@ -78,7 +78,7 @@ h2 span {
     display: block;
     margin: 0 15px;
     width: auto;
-}
+} */
 
 .navbar-default {
     background-color: #ffffff;
@@ -320,11 +320,13 @@ header .after-h1 {
 .catalog-box h3 {
     font-size: 20px;
     font-weight: 500;
+    margin-top: 1rem;
 }
 
 .catalog-box img {
-    width: 360px;
+    width: 425px;
     margin: -20px -20px 0;
+    box-shadow: 1px 1px 9px 4px #0000006e;
 }
 
 .catalog-box .text {
@@ -585,52 +587,7 @@ footer {
     text-decoration: underline;
 }
 
-.modal-header {
-    padding: 50px 20px 0;
-    border: none;
-    text-align: center;
-    font-size: 16px;
-}
 
-.modal-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.modal-body {
-    position: relative;
-    padding: 20px 50px 50px;
-}
-
-.modal-body button.main-btn {
-    width: 100%;
-}
-
-.modal-body .form-control {
-    text-align: center;
-    padding: 15px 25px;
-    height: auto;
-    border-radius: 6px;
-    box-shadow: none;
-}
-
-button.close {
-    font-size: 40px;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    transition: 0.3s all;
-    text-shadow: none;
-}
-
-.modal-content {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.modal {
-    text-align: center;
-}
 
 .privacy_text h4 {
     font-weight: bold;
@@ -640,42 +597,21 @@ button.close {
     margin-bottom: 15px;
 }
 
-@media screen and (min-width: 768px) {
-    .modal:before {
-        display: inline-block;
-        vertical-align: middle;
-        content: " ";
-        height: 100%;
-    }
-}
 
-.modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-}
-
-@media(max-width: 768px) {
-    .modal-body {
-        position: relative;
-        padding: 20px;
-    }
-
-    .modal-header {
-        padding: 30px 20px 0;
-        font-size: 14px;
-    }
-}
-
-#popup__toggle {
+.button-msg {
     bottom: 25px;
     right: 10px;
     position: fixed;
     z-index: 999;
+    border: none;
 }
 
-#popup__toggle:focus {
+.button-msg:focus {
     outline: 0;
+}
+
+.button-msg button {
+    opacity: 0;
 }
 
 .img-circle {
@@ -744,7 +680,7 @@ button.close {
     -moz-border-radius: 100%;
     border-radius: 100%;
     border: 2px solid transparent;
-    opacity: .7;
+    opacity: .9;
 }
 
 .img-circleblock {
@@ -752,15 +688,16 @@ button.close {
     -webkit-box-sizing: content-box;
     width: 72px;
     height: 72px;
-    background-image: url(../img/mini.png);
-    background-position: center center;
-    background-repeat: no-repeat;
     animation-name: tossing;
     -webkit-animation-name: tossing;
     animation-duration: 1.5s;
     -webkit-animation-duration: 1.5s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
+}
+.img-circleblock svg {
+    position: absolute;
+    right: 11px;
 }
 
 .img-circle:hover {
@@ -1213,4 +1150,30 @@ button.close {
 .header-box p {
     margin: 15px 0 0 0;
     font-size: 16px;
+}
+
+.button-flex {
+    margin: 7px 0;
+}
+
+.button-flex a {
+    font-size: 18px;
+}
+@media (max-width:420px) {
+    .button-flex {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .button-flex button:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:420px) and (max-width:767px) {
+    .button-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
 }
