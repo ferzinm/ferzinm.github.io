@@ -144,7 +144,8 @@ h2 span {
 }
 
 header {
-    padding: 40px 0;
+    padding-bottom: 40px;
+    padding-top: 10px;
     background-color: #3498db;
     background-image: url(../img/header-bg.png);
     background-position: left bottom;
@@ -1176,4 +1177,15 @@ footer {
         justify-content: space-between;
         flex-wrap: nowrap;
     }
+}
+
+.logo {
+    display: flex;
+    justify-content: end;
+    background-color: #3498db;
+    margin-bottom: 10px;
+}
+
+.logo img {
+   width: 200px;
 }
