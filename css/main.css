@@ -217,13 +217,15 @@ button {
 
 .nav__list {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    justify-content: flex-end;
 }
 
 .nav__link {
     font-weight: 500;
     position: relative;
     color: var(--color-dark);
+    white-space: nowrap;
 }
 
 .nav__link::after {
@@ -248,7 +250,8 @@ button {
 .header__actions {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: flex-end;
+    min-width: 30px;
 }
 
 /* Кнопки */
