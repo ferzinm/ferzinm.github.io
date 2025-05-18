@@ -3,29 +3,29 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Механизированная штукатурка стен по цене от 10 руб за м2 в Лиде и Гродненской области, бесплатный замер, этапы и преимущества механизированной штукатурки">
     <meta name="robots" content="index, follow">
     <meta name="yandex-verification" content="357124c6d6bdc90b" />
     <meta name="facebook-domain-verification" content="n9th4z0c0wi2xl7cp6tjv50ahgie0u" />
-    <title>Механизированная штукатурка стен по цене от 10 руб за м2 в Лиде и Гродненской области</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
+    <title>Механизированная штукатурка стен | Профессиональные штукатурные работы</title>
+    
+    <!-- Подключаем Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем иконки Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Сохраняем старые стили иконок -->
     <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    
+    <!-- Основной CSS -->
     <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Favicons -->
     <link rel="shortcut icon" href="https://shtukaturka-lida.pro/favicon.ico" type="image/x-icon">
     <link rel="icon" href="https://shtukaturka-lida.pro/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -38,299 +38,651 @@
 </head>
 
 <body>
-    <header>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="preloader__spinner"></div>
+    </div>
 
+    <!-- Шапка сайта -->
+    <header class="header">
         <div class="container">
-            <div class="logo"><img src="./img/logo.png" alt=""></div>
-            <div class="header-box">
-                <h1 class="text-shadow">Механизированные штукатурные работы по цене от - <span
-                        style="padding-bottom: 5px; border-bottom: 2px solid;">10 руб/м²</span></h1>
-                <h2>Дешевле и лучше ручной!</h2>
-
-                <hr style="margin-bottom: 15px;">
-                <p>Работаем по всей Гродненской области</p>
-                <div class="button-flex">
-                    <button id='contact-btn' class="btn btn-light">Наши контакты</button>
-                    <button id="modal-msg" class="btn btn-dark">Оставить заявку</button>
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <div class="logo__container">
+                        <img src="./img/logo.png" alt="Логотип" class="logo__img">
+                    </div>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#process" class="nav__link">Этапы работ</a></li>
+                        <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="btn btn--primary" id="modal-msg-nav">Оставить заявку</button>
+                    <button class="menu-toggle" aria-label="Открыть меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                <hr>
-
-                <h3>Всем заказчикам замер - <u>БЕСПЛАТНО</u>!</h3>
-                <p>Свяжитесь с нами и мы подробно расскажем о стоимости работ в вашем случае.</p>
             </div>
         </div>
     </header>
-    <section id="catalog">
-        <div class="container">
-            <h2>Этапы работ</h2>
-            <p style="font-size: 18px;text-align: center;">Как работает механизированная штукатурка стен</p>
-            <div class="row fl">
-                <div class="col-md-4 col-sm-6">
-                    <div class="catalog-box">
-                        <img src="img/catalog-item6.jpg" title="Подготовка" alt="Подготовка">
-                        <h3>1. Подготовка</h3>
-                        <div class="text">
-                            На этом этапе необходимо подготовить стены для проведения дальнейших работ. Для этого
-                            проводится черновая обработка поверхностей – проверяется уровнем их ровность, слишком
-                            торчащие бугры сбиваются, ямы заполняются раствором.
-                        </div>
-                    </div>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__header">
+            <a href="#" class="logo">
+                <div class="logo__container">
+                    <img src="./img/logo.png" alt="Логотип" class="logo__img">
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="catalog-box">
-                        <img src="img/catalog-item1.jpg" title="Грунтование" alt="Грунтование">
-                        <h3>2. Грунтование</h3>
-                        <div class="text">
-                            Для сильно впитывающих поверхностей используем специальные грунты, которые создают пленку,
-                            защищающую штукатурный слой от растрескивания.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="catalog-box">
-                        <img src="img/catalog-item2.jpg" title="Установка маяков" alt="Установка маяков">
-                        <h3>3. Установка маяков</h3>
-                        <div class="text">
-                            Этот этап является самым важным в работе. Использование лазерного осепостроителя позволяет
-                            ускорить эту операцию. Установленные маяки и уголки также обрабатываются грунтовкой,
-                            несмотря на то, что первые подлежат удалению. Смысл в том, чтобы грунтовка попала на
-                            штукатурные лепки, в которые вдавливают металлические профили. В этом случае при удалении
-                            маяка канавка получается меньше и после заполнения раствором в дальнейшем там не образуются
-                            вертикальные трещины.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="catalog-box">
-                        <img src="img/catalog-item3.jpg" title="Нанесение штукатурки" alt="Нанесение штукатурки">
-                        <h3>4. Нанесение штукатурки</h3>
-                        <div class="text">
-                            Это главный этап в штукатурных работах. С помощью штукатурной станцией получаем готовый
-                            гипсовый или цементный раствор, тщательно перемешанный в бункере и наносим на стены под
-                            давлением.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="catalog-box">
-                        <img src="img/catalog-item4.jpg" title="Снятие маяков" alt="Снятие маяков">
-                        <h3>5. Снятие маяков</h3>
-                        <div class="text">
-                            После высыхания штукатурного слоя производим удаление маяков, т.к. в последствии они могут
-                            дать ржавчину. Оставшиеся канавки заполняем смесью и выравниваем с общей плоскостью стены
-                            при помощи шпателя.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="catalog-box">
-                        <img src="img/catalog-item5.jpg" title="Окончание работ" alt="Окончание работ">
-                        <h3>6. Окончание работ</h3>
-                        <div class="text">
-                            Для того, чтобы убрать все небольшие неровности и шероховатости, поверхность штукатурки
-                            затираем тёркой. Данный этап работ является заключительным при механизированном нанесении
-                            цементных смесей.
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </a>
+            <button class="mobile-menu__close" aria-label="Закрыть меню">
+                <i class="ri-close-line"></i>
+            </button>
         </div>
-    </section>
-    <section id="about">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#hero" class="mobile-menu__link">Главная</a></li>
+                <li class="mobile-menu__item"><a href="#process" class="mobile-menu__link">Этапы работ</a></li>
+                <li class="mobile-menu__item"><a href="#benefits" class="mobile-menu__link">Преимущества</a></li>
+                <li class="mobile-menu__item"><a href="#contact" class="mobile-menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__actions">
+            <button class="btn btn--primary btn--full" id="mobile-msg-nav">Оставить заявку</button>
+        </div>
+    </div>
+
+    <!-- Главный экран (Hero) -->
+    <section id="hero" class="hero">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <h2>Преимущества механизированной штукатурки</h2>
-                    <div class="text">
-                        <p class="first-p">
-                            Механическое оштукатуривание осуществляется с использованием специальных машин. Основные
-                            достоинства механического способа оштукатуривания:
-                        </p>
-                        <ul>
-                            <li>Экономичный расход штукатурного раствора. Его нанесение производится тонким равномерным
-                                слоем с уменьшением потерь;</li>
-                            <li>Образование раствора с однородной консистенцией, что исключает появление на
-                                оштукатуренной поверхности неровностей, трещин;</li>
+            <div class="hero__grid">
+                <div class="hero__content">
+                    <h1 class="hero__title">Механизированная штукатурка стен</h1>
+                    <div class="hero__price-tag">от 10 руб/м²</div>
+                    <h2 class="hero__subtitle">Дешевле и лучше ручной!</h2>
+                    <p class="hero__text">Работаем по всей Гродненской области с гарантией качества. Всем заказчикам замер - <span class="hero__highlight">БЕСПЛАТНО</span></p>
+                    <div class="hero__actions">
+                        <button id="contact-btn" class="btn btn--secondary">Наши контакты</button>
+                        <button id="modal-msg-hero" class="btn btn--primary">Оставить заявку</button>
+                    </div>
+                </div>
+                <div class="hero__features">
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">Что мы предлагаем:</h3>
+                        <ul class="feature-list">
+                            <li class="feature-list__item">
+                                <i class="ri-check-line feature-list__icon"></i>
+                                <span>Качественное выполнение работ</span>
                             </li>
+                            <li class="feature-list__item">
+                                <i class="ri-check-line feature-list__icon"></i>
+                                <span>Экономия до 20% по сравнению с ручной</span>
                             </li>
-                            <li>Получение высокой степени адгезии, благодаря тому, что раствор наносится под давлением;
+                            <li class="feature-list__item">
+                                <i class="ri-check-line feature-list__icon"></i>
+                                <span>Бесплатный замер объекта</span>
                             </li>
+                            <li class="feature-list__item">
+                                <i class="ri-check-line feature-list__icon"></i>
+                                <span>Оптимальные сроки выполнения</span>
                             </li>
-                            <li>Образование поверхности, с высокой стойкостью к механическим воздействиям;</li>
-                            <li>Создание ровной поверхности, позволяющей минимизировать шпаклевочные работы, сразу же
-                                проводить финишную декоративную покраску или нанесение других покрытий (обоев, такни и
-                                др.);</li>
-                            <li>Уменьшение трудозатрат. Работы по оштукатуриванию механическим способом по силам
-                                выполнить одному человеку;</li>
-                            <li>Сокращение сроков отделочных работ;</li>
-                            <li>Небольшая стоимость штукатурных работ. Ниже почти на 20% по сравнению с ручным
-                                оштукатуриванием.</li>
+                            <li class="feature-list__item">
+                                <i class="ri-check-line feature-list__icon"></i>
+                                <span>Работа по всей Гродненской области</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <img src="img/about.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Калькулятор стоимости (новая функция) -->
+    <section id="calculator" class="calculator">
+        <div class="container">
+            <h2 class="section-title">Рассчитайте стоимость работ</h2>
+            <p class="section-subtitle">Укажите параметры вашего помещения для предварительного расчета</p>
+            
+            <div class="calculator__form">
+                <div class="calculator__grid">
+                    <div class="form-group">
+                        <label class="form-label">Площадь стен (м²)</label>
+                        <input type="number" class="form-input" id="wall-area" min="1" value="50">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Тип поверхности</label>
+                        <select class="form-select" id="surface-type">
+                            <option value="1">Бетон</option>
+                            <option value="1.1">Кирпич</option>
+                            <option value="0.9">Газобетон</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Тип штукатурки</label>
+                        <select class="form-select" id="plaster-type">
+                            <option value="1">Гипсовая</option>
+                            <option value="1.2">Цементная</option>
+                            <option value="1.5">Декоративная</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Толщина слоя (мм)</label>
+                        <select class="form-select" id="layer-thickness">
+                            <option value="1">До 10 мм</option>
+                            <option value="1.3">10-20 мм</option>
+                            <option value="1.6">Более 20 мм</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calculator__result">
+                    <div class="calculator__price">
+                        <span>Примерная стоимость:</span>
+                        <div class="calculator__price-value">
+                            <span id="calculated-price">500</span>
+                            <span class="calculator__price-currency">руб</span>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary" id="calculator-request">Оставить заявку</button>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact">
+
+    <!-- Этапы работ -->
+    <section id="process" class="process section-padding">
         <div class="container">
-            <h2>Наши контакты</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="contact-box">
+            <h2 class="section-title">Этапы работ</h2>
+            <p class="section-subtitle">Как работает механизированная штукатурка стен</p>
+            
+            <div class="process__grid">
+                <!-- Этап 1 -->
+                <div class="process-card" data-aos="fade-up">
+                    <div class="process-card__media">
+                        <img src="img/catalog-item6.jpg" alt="Подготовка" class="process-card__img">
+                        <div class="process-card__num">1</div>
+                    </div>
+                    <div class="process-card__content">
+                        <h3 class="process-card__title">Подготовка</h3>
+                        <p class="process-card__text">На этом этапе необходимо подготовить стены для проведения дальнейших работ. Проверяется уровнем их ровность, торчащие бугры сбиваются, ямы заполняются раствором.</p>
+                    </div>
+                </div>
+                
+                <!-- Этап 2 -->
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-card__media">
+                        <img src="img/catalog-item1.jpg" alt="Грунтование" class="process-card__img">
+                        <div class="process-card__num">2</div>
+                    </div>
+                    <div class="process-card__content">
+                        <h3 class="process-card__title">Грунтование</h3>
+                        <p class="process-card__text">Для сильно впитывающих поверхностей используем специальные грунты, которые создают пленку, защищающую штукатурный слой от растрескивания.</p>
+                    </div>
+                </div>
+                
+                <!-- Этап 3 -->
+                <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-card__media">
+                        <img src="img/catalog-item2.jpg" alt="Установка маяков" class="process-card__img">
+                        <div class="process-card__num">3</div>
+                    </div>
+                    <div class="process-card__content">
+                        <h3 class="process-card__title">Установка маяков</h3>
+                        <p class="process-card__text">Этот этап является самым важным в работе. Использование лазерного осепостроителя позволяет ускорить эту операцию и обеспечить идеальную точность установки.</p>
+                    </div>
+                </div>
+                
+                <!-- Этап 4 -->
+                <div class="process-card" data-aos="fade-up">
+                    <div class="process-card__media">
+                        <img src="img/catalog-item3.jpg" alt="Нанесение штукатурки" class="process-card__img">
+                        <div class="process-card__num">4</div>
+                    </div>
+                    <div class="process-card__content">
+                        <h3 class="process-card__title">Нанесение штукатурки</h3>
+                        <p class="process-card__text">Это главный этап в штукатурных работах. С помощью штукатурной станцией получаем готовый гипсовый или цементный раствор, тщательно перемешанный в бункере и наносим на стены под давлением.</p>
+                    </div>
+                </div>
+                
+                <!-- Этап 5 -->
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-card__media">
+                        <img src="img/catalog-item4.jpg" alt="Снятие маяков" class="process-card__img">
+                        <div class="process-card__num">5</div>
+                    </div>
+                    <div class="process-card__content">
+                        <h3 class="process-card__title">Снятие маяков</h3>
+                        <p class="process-card__text">После высыхания штукатурного слоя производим удаление маяков, т.к. в последствии они могут дать ржавчину. Оставшиеся канавки заполняем смесью и выравниваем с общей плоскостью стены.</p>
+                    </div>
+                </div>
+                
+                <!-- Этап 6 -->
+                <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-card__media">
+                        <img src="img/catalog-item5.jpg" alt="Окончание работ" class="process-card__img">
+                        <div class="process-card__num">6</div>
+                    </div>
+                    <div class="process-card__content">
+                        <h3 class="process-card__title">Окончание работ</h3>
+                        <p class="process-card__text">Для того, чтобы убрать все небольшие неровности и шероховатости, поверхность штукатурки затираем тёркой. Данный этап работ является заключительным при механизированном нанесении.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="benefits" class="benefits section-padding">
+        <div class="container">
+            <h2 class="section-title">Преимущества механизированной штукатурки</h2>
+            <p class="section-subtitle">Почему стоит выбрать механизированную штукатурку</p>
+            
+            <div class="benefits__grid">
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <i class="ri-drop-fill"></i>
+                    </div>
+                    <div class="benefit-item__content">
+                        <h3 class="benefit-item__title">Экономичный расход</h3>
+                        <p class="benefit-item__text">Нанесение производится тонким равномерным слоем с минимальными потерями.</p>
+                        <div class="benefit-item__list">
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Меньше отходов</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Точная дозировка</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Экономия до 15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <i class="ri-shield-check-fill"></i>
+                    </div>
+                    <div class="benefit-item__content">
+                        <h3 class="benefit-item__title">Высокая адгезия</h3>
+                        <p class="benefit-item__text">Благодаря нанесению под давлением, обеспечивается отличное сцепление с поверхностью.</p>
+                        <div class="benefit-item__list">
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Без отслаивания</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Меньше пузырей</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Долговечный результат</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <i class="ri-time-fill"></i>
+                    </div>
+                    <div class="benefit-item__content">
+                        <h3 class="benefit-item__title">Сокращение сроков</h3>
+                        <p class="benefit-item__text">Значительно ускоряет отделочные работы по сравнению с ручным нанесением.</p>
+                        <div class="benefit-item__list">
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>В 3 раза быстрее</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Оперативная работа</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Быстрое высыхание</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <i class="ri-award-fill"></i>
+                    </div>
+                    <div class="benefit-item__content">
+                        <h3 class="benefit-item__title">Идеально ровная поверхность</h3>
+                        <p class="benefit-item__text">Минимизирует шпаклевочные работы, позволяет сразу проводить финишную отделку.</p>
+                        <div class="benefit-item__list">
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Идеальное выравнивание</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Без трещин</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Минимум шпаклевки</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <i class="ri-money-dollar-circle-line"></i>
+                    </div>
+                    <div class="benefit-item__content">
+                        <h3 class="benefit-item__title">Экономия до 20%</h3>
+                        <p class="benefit-item__text">Снижение расходов на материалы и оплату труда по сравнению с ручной штукатуркой.</p>
+                        <div class="benefit-item__list">
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Ниже стоимость работ</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Меньше затрат на материалы</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Выгодное сочетание цены и качества</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <i class="ri-tools-fill"></i>
+                    </div>
+                    <div class="benefit-item__content">
+                        <h3 class="benefit-item__title">Профессиональное оборудование</h3>
+                        <p class="benefit-item__text">Использование современных штукатурных станций обеспечивает высокое качество работы.</p>
+                        <div class="benefit-item__list">
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Современная техника</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Профессиональные мастера</span>
+                            </div>
+                            <div class="benefit-item__list-item">
+                                <i class="ri-check-line benefit-item__list-icon"></i>
+                                <span>Гарантия качества</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея работ (карусель) -->
+    <section id="gallery" class="gallery section-padding">
+        <div class="container">
+            <h2 class="section-title">Наши работы</h2>
+            <p class="section-subtitle">Примеры выполненных проектов</p>
+            
+            <div class="gallery__slider">
+                <div class="gallery__track">
+                    <div class="gallery__item">
+                        <img src="img/catalog-item1.jpg" alt="Работа 1" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <span class="gallery__caption">Квартира в новостройке</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/catalog-item2.jpg" alt="Работа 2" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <span class="gallery__caption">Частный дом</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/catalog-item3.jpg" alt="Работа 3" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <span class="gallery__caption">Офисное помещение</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="img/catalog-item4.jpg" alt="Работа 4" class="gallery__img">
+                        <div class="gallery__overlay">
+                            <span class="gallery__caption">Коммерческий объект</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery__controls">
+                    <button class="gallery__arrow gallery__arrow--prev">
+                        <i class="ri-arrow-left-line"></i>
+                    </button>
+                    <div class="gallery__dots">
+                        <span class="gallery__dot active"></span>
+                        <span class="gallery__dot"></span>
+                        <span class="gallery__dot"></span>
+                        <span class="gallery__dot"></span>
+                    </div>
+                    <button class="gallery__arrow gallery__arrow--next">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы клиентов (новая секция) -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <p class="section-subtitle">Что говорят о нас наши клиенты</p>
+            
+            <div class="testimonials__slider">
+                <div class="testimonials__track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">Отличная работа! Мастера выполнили штукатурку очень качественно и в срок. Стены получились идеально ровными, никаких бугров и впадин.</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__name">Иван Петров</div>
+                            <div class="testimonial-card__location">Лида</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">Обратился по рекомендации знакомых и не пожалел. Цена оказалась ниже, чем у конкурентов, а качество на высоте. Буду рекомендовать друзьям!</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__name">Анна Сидорова</div>
+                            <div class="testimonial-card__location">Гродно</div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__text">Штукатурили большой загородный дом. Мастера работали быстро и аккуратно, весь мусор убрали за собой. Результатом доволен, рекомендую!</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__name">Алексей Смирнов</div>
+                            <div class="testimonial-card__location">Скидель</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials__controls">
+                    <button class="testimonials__arrow testimonials__arrow--prev">
+                        <i class="ri-arrow-left-line"></i>
+                    </button>
+                    <div class="testimonials__dots">
+                        <span class="testimonials__dot active"></span>
+                        <span class="testimonials__dot"></span>
+                        <span class="testimonials__dot"></span>
+                    </div>
+                    <button class="testimonials__arrow testimonials__arrow--next">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контакты -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">Наши контакты</h2>
+            <p class="section-subtitle">Свяжитесь с нами любым удобным способом</p>
+            
+            <div class="contact__grid">
+                <div class="contact-card">
+                    <div class="contact-card__icon">
                         <span class="pe-7s-call"></span>
-                        <div>Телефон:</div>
-                        <a href="tel:+375297500449">+375 (29) 750-04-49</a>
                     </div>
+                    <h3 class="contact-card__title">Телефон</h3>
+                    <a href="tel:+375297500449" class="contact-card__link">+375 (29) 750-04-49</a>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="contact-box">
+                
+                <div class="contact-card">
+                    <div class="contact-card__icon">
                         <span class="pe-7s-photo"></span>
-                        <div>Instagram:</div>
-                        <a href="https://www.instagram.com/shtukaturka_lida/" target="_blank">@shtukaturka_lida</a>
                     </div>
+                    <h3 class="contact-card__title">Instagram</h3>
+                    <a href="https://www.instagram.com/shtukaturka_lida/" target="_blank" class="contact-card__link">@shtukaturka_lida</a>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="contact-box">
+                
+                <div class="contact-card">
+                    <div class="contact-card__icon">
                         <span class="pe-7s-users"></span>
-                        <div>Viber:</div>
-                        <a href="viber://chat?number=%2B375297500449" target="_blank">+375 (29) 750-04-49</a>
                     </div>
+                    <h3 class="contact-card__title">Viber</h3>
+                    <a href="viber://chat?number=%2B375297500449" target="_blank" class="contact-card__link">+375 (29) 750-04-49</a>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
+
+    <!-- Футер -->
+    <footer class="footer">
         <div class="container">
-            <div class="footer-title">ИП Сосновский Е.А - УНП 591388038</div>
-            <div class="copyright">
-                © Все права защищены.
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <div class="footer__logo-container">
+                        <img src="./img/logo.png" alt="Логотип" class="footer__logo">
+                    </div>
+                    <p class="footer__company">ИП Сосновский Е.А - УНП 591388038</p>
+                </div>
+                <div class="footer__copyright">
+                    &copy; 2024 Все права защищены.
+                </div>
             </div>
         </div>
     </footer>
-    </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Сообщения</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="modal-body">
-                    <form id="form-msg">
-                        <div class="mb-3">
-                            <input type="text" name="name" class="form-control" id="exampleName"
-                                aria-describedby="emailHelp" placeholder="Ваше имя" required>
-
-                        </div>
-                        <div class="mb-3">
-                            <input type="tel" name="phone" data-type="phone" class="form-control"
-                                placeholder="Номер телефона" id="exampleNumber" maxlength="18">
-                        </div>
-
-                        <div class="mb-3 pt-1 border-top">
-                            <label for="exampleWork" class="form-label p-1">Что требуется сделать</label>
-                            <textarea class="form-control" id="exampleWork" rows="4" name="work"
-                                placeholder="Подробно опишите задачу, сроки выполнение, ваши пожелания..."></textarea>
-                        </div>
-                        <div class="mb-2">
-                            <input type="text" name="address" class="form-control" placeholder="Ваше местонахождение"
-                                id="exampleNumber" maxlength="18">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Отправить</button>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalSucces" tabindex="-1" aria-labelledby="modalSuccesLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalSuccesLabel">Успешно</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Спасибо за обращение. Ваша заявка успешна сформирована.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="change-data">Изменить данные</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="modal fade" id="modalError" tabindex="-1" aria-labelledby="modalErrorLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalErrorLabel">Ошибка</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p style="font-size: 18px; text-align:center;">При отправке данных произошла ошибка.</p>
-                    <p style="font-size: 16px;">Пожалуйста, проверьте введенные данные или свяжитесь с нами.</p>
-                </div>
-                <div class="modal-footer p-1">
-                    <button type="button" class="btn btn-secondary" id="change-data-error">Изменить данные</button>
-                    <button type="button" class="btn btn-primary" id="contact-error">Связаться с нами</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <a href="#exampleModal" id="modal-msg" class="button-msg">
-        <div class="circlephone" style="transform-origin: center;"></div>
-        <div class="circle-fill" style="transform-origin: center;"></div>
-        <div class="img-circle" style="transform-origin: center;">
-            <div class="img-circleblock" style="transform-origin: center;"><svg xmlns="http://www.w3.org/2000/svg"
-                    width="50" height="72" fill="currentColor" class="bi bi-envelope text-light" viewBox="0 0 16 16">
-                    <path
-                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                </svg></div>
+    <!-- Плавающая кнопка для мобильных устройств -->
+    <a href="#" id="modal-msg-float" class="floating-btn">
+        <div class="floating-btn__pulse"></div>
+        <div class="floating-btn__icon">
+            <i class="ri-message-3-line"></i>
         </div>
     </a>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter88819949 = new Ya.Metrika({
-                        id: 88819949,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true,
-                        webvisor: true
-                    });
-                } catch (e) { }
-            });
 
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
+    <!-- Модальное окно с формой заявки -->
+    <div class="modal" id="modal-form">
+        <div class="modal__backdrop"></div>
+        <div class="modal__container">
+            <div class="modal__header">
+                <h3 class="modal__title">Оставить заявку</h3>
+                <button class="modal__close" aria-label="Закрыть">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal__body">
+                <form id="form-msg" class="form">
+                    <div class="form-group">
+                        <label class="form-label">Ваше имя</label>
+                        <input type="text" name="name" class="form-input" placeholder="Как к вам обращаться" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Номер телефона</label>
+                        <input type="tel" name="phone" data-type="phone" class="form-input"
+                            placeholder="+375 (__) ___-__-__" maxlength="18">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Ваше местонахождение</label>
+                        <input type="text" name="address" class="form-input" placeholder="Город, район">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Что требуется сделать</label>
+                        <textarea class="form-textarea" name="work" rows="4" 
+                            placeholder="Опишите задачу, сроки, пожелания..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/88819949" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
-    <script src="./js/scripts.js"></script>
+    <!-- Модальное окно успешной отправки -->
+    <div class="modal" id="modal-success">
+        <div class="modal__backdrop"></div>
+        <div class="modal__container">
+            <div class="modal__header modal__header--success">
+                <h3 class="modal__title">Успешно</h3>
+                <button class="modal__close" aria-label="Закрыть">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal__body modal__body--center">
+                <div class="modal__icon modal__icon--success">
+                    <i class="ri-check-line"></i>
+                </div>
+                <h4 class="modal__subtitle">Спасибо за обращение!</h4>
+                <p class="modal__text">Ваша заявка успешно сформирована. В ближайшее время мы свяжемся с вами.</p>
+                <div class="modal__actions">
+                    <button class="btn btn--outline" id="change-data">Изменить данные</button>
+                    <button class="btn btn--primary modal__close-btn">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно ошибки -->
+    <div class="modal" id="modal-error">
+        <div class="modal__backdrop"></div>
+        <div class="modal__container">
+            <div class="modal__header modal__header--error">
+                <h3 class="modal__title">Ошибка</h3>
+                <button class="modal__close" aria-label="Закрыть">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal__body modal__body--center">
+                <div class="modal__icon modal__icon--error">
+                    <i class="ri-error-warning-line"></i>
+                </div>
+                <h4 class="modal__subtitle">Произошла ошибка!</h4>
+                <p class="modal__text">При отправке данных произошла ошибка. Пожалуйста, проверьте введенные данные или свяжитесь с нами напрямую.</p>
+                <div class="modal__actions">
+                    <button class="btn btn--outline" id="change-data-error">Изменить данные</button>
+                    <button class="btn btn--primary" id="contact-error">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
