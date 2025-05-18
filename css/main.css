@@ -215,6 +215,10 @@ button {
     height: 35px;
 }
 
+.nav {
+    margin-left: auto;
+}
+
 .nav__list {
     display: flex;
     gap: 1.5rem;
@@ -248,10 +252,7 @@ button {
 }
 
 .header__actions {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    min-width: 30px;
+    display: none;
 }
 
 /* Кнопки */
@@ -1295,6 +1296,14 @@ button {
 @media (max-width: 991px) {
     .nav {
         display: none;
+        margin-left: 0;
+    }
+    
+    .header__actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: 30px;
     }
 
     .menu-toggle {
