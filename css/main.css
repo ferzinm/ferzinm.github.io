@@ -198,7 +198,7 @@ button {
 }
 
 .logo__container {
-    background-color: var(--color-dark);
+    background-color: transparent;
     border-radius: var(--radius);
     padding: 5px 10px;
     display: flex;
@@ -774,7 +774,7 @@ button {
     padding: 1.5rem;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
     color: var(--color-white);
-    opacity: 1;
+        opacity: 1;
     transform: translateY(0);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -1049,11 +1049,11 @@ button {
     border-radius: var(--radius);
     padding: 5px 10px;
     display: inline-flex;
-    max-width: 200px;
+    max-width: 100px;
 }
 
 .footer__logo {
-    height: 40px;
+    height: 30px;
     width: auto;
     max-width: 100%;
 }
@@ -1251,7 +1251,7 @@ button {
 
 /* Галерейное модальное окно */
 .gallery-modal {
-    width: 90%;
+        width: 90%;
     max-width: 900px;
     position: relative;
     z-index: 1;
@@ -1282,18 +1282,18 @@ button {
 }
 
 .gallery-modal__img {
-    width: 100%;
+        width: 100%;
     height: auto;
     border-radius: var(--radius);
     box-shadow: var(--shadow-lg);
-}
+    }
 
 /* Медиа запросы */
 @media (max-width: 991px) {
     .nav {
         display: none;
     }
-    
+
     .menu-toggle {
         display: flex;
     }
@@ -1314,6 +1314,23 @@ button {
     
     .benefit-item__content {
         width: 100%;
+    }
+    
+    .header__inner {
+        padding: 0 0.5rem;
+    }
+    
+    .logo__img {
+        height: 35px;
+    }
+    
+    .header.scrolled .logo__img {
+        height: 30px;
+    }
+    
+    .btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -1354,6 +1371,14 @@ button {
     
     .footer__info {
         align-items: center;
+    }
+    
+    .logo__img {
+        height: 32px;
+    }
+    
+    .header.scrolled .logo__img {
+        height: 28px;
     }
 }
 
@@ -1401,5 +1426,35 @@ button {
     
     .gallery__caption {
         font-size: var(--fs-base);
+    }
+    
+    .logo__img {
+        height: 30px;
+    }
+    
+    .header.scrolled .logo__img {
+        height: 26px;
+    }
+    
+    .header__actions {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    #modal-msg-nav {
+        display: none;
+    }
+    
+    .header__actions {
+        gap: 0;
+    }
+    
+    .logo__img {
+        height: 28px;
+    }
+    
+    .header.scrolled .logo__img {
+        height: 24px;
     }
 }
