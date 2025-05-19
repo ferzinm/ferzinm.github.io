@@ -44,7 +44,7 @@
     --radius-full: 9999px;
     
     /* Отступы секций */
-    --section-padding: 5rem 0;
+    --section-padding: 3.5rem 0;
     
     /* Переходы */
     --transition: all 0.3s ease;
@@ -126,7 +126,7 @@ button {
     font-size: var(--fs-lg);
     color: var(--color-gray);
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 /* Прелоадер */
@@ -408,7 +408,7 @@ button {
 /* Секция Hero */
 .hero {
     position: relative;
-    padding: 10rem 0 5rem;
+    padding: 7rem 0 4rem;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(../img/header-bg.png) no-repeat center / cover;
     color: var(--color-white);
@@ -745,7 +745,7 @@ button {
 .gallery {
     background-color: var(--color-white);
     position: relative;
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
 }
 
 .gallery__slider {
@@ -814,7 +814,7 @@ button {
     align-items: center;
     gap: 1rem;
     position: absolute;
-    bottom: -5rem;
+    bottom: -4rem;
     left: 0;
     right: 0;
     width: 100%;
@@ -863,7 +863,7 @@ button {
 .testimonials {
     background-color: var(--color-lighter-gray);
     position: relative;
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
 }
 
 .testimonials__slider {
@@ -873,9 +873,10 @@ button {
 
 .testimonials__track {
     position: relative;
-    min-height: 250px;
+    /* min-height: 250px; */ /* Убираем или комментируем фиксированную минимальную высоту */
     margin-bottom: 2rem;
     padding: 1rem 0;
+    transition: height 0.4s ease-in-out; /* Добавляем плавный переход для высоты */
 }
 
 .testimonial-card {
@@ -942,7 +943,7 @@ button {
     align-items: center;
     gap: 1rem;
     position: absolute;
-    bottom: -5rem;
+    bottom: -4rem;
     left: 0;
     right: 0;
     width: 100%;
@@ -1429,19 +1430,19 @@ button {
     }
     
     .testimonials {
-        padding-bottom: 8rem;
+        padding-bottom: 6rem;
     }
     
     .testimonials__controls {
-        bottom: -6rem;
+        bottom: -4rem;
     }
     
     .gallery {
-        padding-bottom: 8rem;
+        padding-bottom: 6rem;
     }
     
     .gallery__controls {
-        bottom: -6rem;
+        bottom: -4rem;
     }
     
     .gallery__track {

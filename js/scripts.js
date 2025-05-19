@@ -243,6 +243,14 @@ function updateSlider() {
         dot.classList.remove('active');
       }
     });
+
+    // Адаптивная высота для трека отзывов
+    if (testimonialsTrack) {
+      const activeCard = testimonialCards[currentSlide];
+      if (activeCard) {
+        testimonialsTrack.style.height = activeCard.offsetHeight + 'px';
+      }
+    }
   }
 }
 
