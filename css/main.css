@@ -450,6 +450,13 @@ button {
     opacity: 0.9;
 }
 
+.hero__note {
+    font-size: var(--fs-sm);
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
 .hero__highlight {
     background-color: var(--color-white);
     color: var(--color-dark);
@@ -568,6 +575,15 @@ button {
 .calculator__price-currency {
     font-size: var(--fs-lg);
     font-weight: 500;
+}
+
+.calculator__note {
+    font-size: var(--fs-sm);
+    font-style: italic;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--color-gray);
 }
 
 /* Секция с процессами */

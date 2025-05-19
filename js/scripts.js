@@ -202,7 +202,7 @@ const layerThickness = document.getElementById('layer-thickness');
 const calculatedPrice = document.getElementById('calculated-price');
 
 function calculatePrice() {
-  const basePrice = 10;
+  const basePrice = 15;
   const area = parseFloat(wallArea.value) || 50;
   const surfaceCoef = parseFloat(surfaceType.value) || 1;
   const plasterCoef = parseFloat(plasterType.value) || 1;
