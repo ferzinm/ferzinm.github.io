@@ -209,7 +209,7 @@ function calculatePrice() {
   const thicknessCoef = parseFloat(layerThickness.value) || 1;
   
   let totalPrice = area * basePrice * surfaceCoef * plasterCoef * thicknessCoef;
-  // Округление до ближайшего десятка (например, 953 -> 950, 957 -> 960)
+  // Округление до ближайшего десятка (например, 952.5 -> 950, 957.5 -> 960)
   totalPrice = Math.round(totalPrice / 10) * 10;
   
   calculatedPrice.textContent = totalPrice;
@@ -227,38 +227,41 @@ const prevArrow = document.querySelector('.testimonials__arrow--prev');
 const nextArrow = document.querySelector('.testimonials__arrow--next');
 
 let currentSlide = 0;
-const totalSlides = testimonialCards.length;
 
 function updateSlider() {
-  if (testimonialCards.length > 0) {
-    testimonialCards.forEach((card, index) => {
-      if (index === currentSlide) {
-        card.classList.add('active');
-      } else {
-        card.classList.remove('active');
-      }
-    });
-    
-    testimonialsDots.forEach((dot, index) => {
-      if (index === currentSlide) {
-        dot.classList.add('active');
-      } else {
-        dot.classList.remove('active');
-      }
-    });
+  const totalSlides = testimonialCards.length;
+  if (totalSlides === 0) return;
 
-    // Адаптивная высота для трека отзывов
-    if (testimonialsTrack) {
-      const activeCard = testimonialCards[currentSlide];
-      if (activeCard) {
-        testimonialsTrack.style.height = activeCard.offsetHeight + 'px';
-      }
+  currentSlide = (currentSlide % totalSlides + totalSlides) % totalSlides;
+
+  testimonialCards.forEach((card, index) => {
+    if (index === currentSlide) {
+      card.classList.add('active');
+    } else {
+      card.classList.remove('active');
+    }
+  });
+  
+  testimonialsDots.forEach((dot, index) => {
+    if (index === currentSlide) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+
+  if (testimonialsTrack) {
+    const activeCard = testimonialCards[currentSlide];
+    if (activeCard) {
+      testimonialsTrack.style.height = activeCard.offsetHeight + 'px';
     }
   }
 }
 
 if (prevArrow) {
   prevArrow.addEventListener('click', () => {
+    const totalSlides = testimonialCards.length;
+    if (totalSlides === 0) return;
     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
     updateSlider();
   });
@@ -266,6 +269,8 @@ if (prevArrow) {
 
 if (nextArrow) {
   nextArrow.addEventListener('click', () => {
+    const totalSlides = testimonialCards.length;
+    if (totalSlides === 0) return;
     currentSlide = (currentSlide + 1) % totalSlides;
     updateSlider();
   });
@@ -278,7 +283,9 @@ testimonialsDots.forEach((dot, index) => {
   });
 });
 
-updateSlider();
+if (testimonialCards.length > 0) {
+    updateSlider(); 
+}
 
 const galleryTrack = document.querySelector('.gallery__track');
 const galleryItems = document.querySelectorAll('.gallery__item');
