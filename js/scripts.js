@@ -208,7 +208,10 @@ function calculatePrice() {
   const plasterCoef = parseFloat(plasterType.value) || 1;
   const thicknessCoef = parseFloat(layerThickness.value) || 1;
   
-  const totalPrice = Math.round(area * basePrice * surfaceCoef * plasterCoef * thicknessCoef);
+  let totalPrice = area * basePrice * surfaceCoef * plasterCoef * thicknessCoef;
+  // Округление до ближайшего десятка (например, 953 -> 950, 957 -> 960)
+  totalPrice = Math.round(totalPrice / 10) * 10;
+  
   calculatedPrice.textContent = totalPrice;
 }
 
