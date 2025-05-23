@@ -370,7 +370,7 @@ button {
 
 .mobile-menu__header {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     margin-bottom: 2rem;
 }
