@@ -9,9 +9,32 @@
     <meta name="robots" content="index, follow">
     <meta name="yandex-verification" content="357124c6d6bdc90b" />
     <meta name="facebook-domain-verification" content="n9th4z0c0wi2xl7cp6tjv50ahgie0u" />
+    
+    <!-- Canonical URL для избежания дублирования контента -->
+    <link rel="canonical" href="https://shtukaturka-lida.by/">
+    
+    <!-- Open Graph разметка для социальных сетей -->
+    <meta property="og:title" content="Механизированная штукатурка стен от 15 руб/м² | Лида и область">
+    <meta property="og:description" content="Профессиональная механизированная штукатурка стен в Лиде и Гродненской области. Бесплатный замер, гарантия качества">
+    <meta property="og:image" content="https://shtukaturka-lida.by/img/logo.png">
+    <meta property="og:url" content="https://shtukaturka-lida.by/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ИП Сосновский Е.А - Механизированная штукатурка">
+    
+    <!-- Twitter Card разметка -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Механизированная штукатурка стен от 15 руб/м²">
+    <meta name="twitter:description" content="Профессиональная механизированная штукатурка в Лиде и области">
+    <meta name="twitter:image" content="https://shtukaturka-lida.by/img/logo.png">
+    
     <title>Механизированная штукатурка стен | Профессиональные штукатурные работы</title>
     
-    <!-- Подключаем Google Fonts -->
+    <!-- Preload критических ресурсов для улучшения производительности -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="./img/logo.png" as="image">
+    
+    <!-- Подключаем Google Fonts с оптимизацией -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -173,16 +196,19 @@
 </head>
 
 <body>
+    <!-- Skip navigation для улучшения доступности -->
+    <a href="#main-content" class="skip-navigation">Перейти к основному содержимому</a>
+    
     <!-- Прелоадер -->
-    <div class="preloader">
+    <div class="preloader" aria-hidden="true">
         <div class="preloader__spinner"></div>
     </div>
 
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="logo">
+                <a href="#" class="logo" aria-label="Перейти на главную страницу">
                     <div class="logo__container">
                         <img src="./img/logo.png" alt="Логотип компании по механизированной штукатурке" class="logo__img">
                     </div>
@@ -212,7 +238,7 @@
         <div class="mobile-menu__header">
             <a href="#" class="logo">
                 <div class="logo__container">
-                    <img src="./img/logo.png" alt="Логотип компании по механизированной штукатурке" class="logo__img">
+                    <img src="./img/logo.png" alt="Логотип компании по механизированной штукатурке" class="logo__img" width="120" height="40">
                 </div>
             </a>
             <button class="mobile-menu__close" aria-label="Закрыть меню">
@@ -234,6 +260,7 @@
     </div>
 
     <!-- Главный экран (Hero) -->
+    <main id="main-content" role="main">
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero__grid">
@@ -339,7 +366,7 @@
                 <!-- Этап 1 -->
                 <div class="process-card" data-aos="fade-up">
                     <div class="process-card__media">
-                        <img src="img/it1.png" alt="Этап 1: Подготовка стен к механизированной штукатурке" class="process-card__img">
+                        <img src="img/it1.png" alt="Этап 1: Подготовка стен к механизированной штукатурке" class="process-card__img" loading="lazy" width="300" height="200">
                         <div class="process-card__num">1</div>
                     </div>
                     <div class="process-card__content">
@@ -351,7 +378,7 @@
                 <!-- Этап 2 -->
                 <div class="process-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="process-card__media">
-                        <img src="img/it2.png" alt="Этап 2: Грунтование поверхностей перед штукатуркой" class="process-card__img">
+                        <img src="img/it2.png" alt="Этап 2: Грунтование поверхностей перед штукатуркой" class="process-card__img" loading="lazy" width="300" height="200">
                         <div class="process-card__num">2</div>
                     </div>
                     <div class="process-card__content">
@@ -363,7 +390,7 @@
                 <!-- Этап 3 -->
                 <div class="process-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="process-card__media">
-                        <img src="img/it3.png" alt="Этап 3: Установка маяков для машинной штукатурки" class="process-card__img">
+                        <img src="img/it3.png" alt="Этап 3: Установка маяков для машинной штукатурки" class="process-card__img" loading="lazy" width="300" height="200">
                         <div class="process-card__num">3</div>
                     </div>
                     <div class="process-card__content">
@@ -375,7 +402,7 @@
                 <!-- Этап 4 -->
                 <div class="process-card" data-aos="fade-up">
                     <div class="process-card__media">
-                        <img src="img/it4.png" alt="Этап 4: Нанесение штукатурного раствора механизированным способом" class="process-card__img">
+                        <img src="img/it4.png" alt="Этап 4: Нанесение штукатурного раствора механизированным способом" class="process-card__img" loading="lazy" width="300" height="200">
                         <div class="process-card__num">4</div>
                     </div>
                     <div class="process-card__content">
@@ -387,7 +414,7 @@
                 <!-- Этап 5 -->
                 <div class="process-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="process-card__media">
-                        <img src="img/it5.png" alt="Этап 5: Снятие маяков и заделка штроб после штукатурки" class="process-card__img">
+                        <img src="img/it5.png" alt="Этап 5: Снятие маяков и заделка штроб после штукатурки" class="process-card__img" loading="lazy" width="300" height="200">
                         <div class="process-card__num">5</div>
                     </div>
                     <div class="process-card__content">
@@ -399,7 +426,7 @@
                 <!-- Этап 6 -->
                 <div class="process-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="process-card__media">
-                        <img src="img/it6.png" alt="Этап 6: Финишная затирка оштукатуренной поверхности" class="process-card__img">
+                        <img src="img/it6.png" alt="Этап 6: Финишная затирка оштукатуренной поверхности" class="process-card__img" loading="lazy" width="300" height="200">
                         <div class="process-card__num">6</div>
                     </div>
                     <div class="process-card__content">
@@ -574,31 +601,31 @@
             <div class="gallery__slider">
                 <div class="gallery__track">
                     <div class="gallery__item">
-                        <img src="img/work1.jpg" alt="Механизированная штукатурка стен в частном доме, г. Лида" class="gallery__img">
+                        <img src="img/work1.jpg" alt="Механизированная штукатурка стен в частном доме, г. Лида" class="gallery__img" loading="lazy" width="400" height="300">
                         <div class="gallery__overlay">
                             <span class="gallery__caption">Частный дом в г. Лида</span>
                         </div>
                     </div>
                     <div class="gallery__item">
-                        <img src="img/work2.jpg" alt="Результат механизированной штукатурки в квартире, г. Ивье" class="gallery__img">
+                        <img src="img/work2.jpg" alt="Результат механизированной штукатурки в квартире, г. Ивье" class="gallery__img" loading="lazy" width="400" height="300">
                         <div class="gallery__overlay">
                             <span class="gallery__caption">Квартира в г. Ивье</span>
                         </div>
                     </div>
                     <div class="gallery__item">
-                        <img src="img/work3.jpg" alt="Оштукатуренные стены в частном доме, г. Щучин, методом машинного нанесения" class="gallery__img">
+                        <img src="img/work3.jpg" alt="Оштукатуренные стены в частном доме, г. Щучин, методом машинного нанесения" class="gallery__img" loading="lazy" width="400" height="300">
                         <div class="gallery__overlay">
                             <span class="gallery__caption">Частный дом в г. Щучин</span>
                         </div>
                     </div>
                     <div class="gallery__item">
-                        <img src="img/work4.jpg" alt="Пример механизированной штукатурки в квартире, Берёзовка" class="gallery__img">
+                        <img src="img/work4.jpg" alt="Пример механизированной штукатурки в квартире, Берёзовка" class="gallery__img" loading="lazy" width="400" height="300">
                         <div class="gallery__overlay">
                             <span class="gallery__caption">Квартира в Берёзовке</span>
                         </div>
                     </div>
                     <div class="gallery__item">
-                        <img src="img/work5.jpg" alt="Качественная механизированная штукатурка в квартире, г. Вороново" class="gallery__img">
+                        <img src="img/work5.jpg" alt="Качественная механизированная штукатурка в квартире, г. Вороново" class="gallery__img" loading="lazy" width="400" height="300">
                         <div class="gallery__overlay">
                             <span class="gallery__caption">Квартира в г. Воронова</span>
                         </div>
@@ -710,14 +737,15 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Футер -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__info">
                     <div class="footer__logo-container">
-                        <img src="./img/logo.png" alt="Логотип ИП Сосновский Е.А - механизированная штукатурка в Лиде и Гродненской области" class="footer__logo">
+                        <img src="./img/logo.png" alt="Логотип ИП Сосновский Е.А - механизированная штукатурка в Лиде и Гродненской области" class="footer__logo" width="100" height="33">
                     </div>
                     <p class="footer__company">ИП Сосновский Е.А - УНП 591388038</p>
                 </div>
